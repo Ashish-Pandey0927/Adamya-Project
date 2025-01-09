@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  overflow-x: hidden;
+}
+#nav-link{
+  font-family: "Unbounded", serif;
+}
+.first-text{
+  font-family: "Unbounded", serif;
+}
+
+.nav-link:hover {
+  color: #173180;
+}
