@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Navbar from './components/Navbar'; // Adjust the path if needed
-import Hero from './components/Hero';
-import Section1 from './components/Section1';
-import Section2 from './components/Section2';
-import Section3 from './components/Section3';
-import Section4 from './components/Section4';
-import Section5 from './components/Section5';
-import Section6 from './components/Section6';
-import Footer from './components/Footer';
+import Navbar from './Components/Navbar'; // Adjust the path if needed
+import Hero from './Components/Hero';
+import Section1 from './Components/Section1';
+import Section2 from './Components/Section2';
+import Section3 from './Components/Section3';
+import Section4 from './Components/Section4';
+import Section5 from './Components/Section5';
+import Section6 from './Components/Section6';
+import Footer from './Components/Footer';
 
 const App = () => {
   useEffect(() => {
