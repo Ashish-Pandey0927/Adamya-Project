@@ -43,7 +43,7 @@ const Hero = () => {
       <div className="flex justify-center items-center w-full md:w-1/3 mb-10 md:mb-0">
         <img
           ref={imageRef}
-          src="/public/home-img.png"
+          src="/home-img.png"
           className="w-[12rem] md:w-[18rem]"
           alt="Rotating Fashion Vision"
         />
