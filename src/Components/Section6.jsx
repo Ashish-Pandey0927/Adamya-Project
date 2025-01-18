@@ -14,13 +14,18 @@ const Section6 = () => {
         {/* Paragraph */}
         <div>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-wide leading-relaxed">
-            We get it—starting something new can feel overwhelming. Book a free session worth ₹5000 to help you gain clarity and confidence. During this one-on-one session, we’ll answer all your questions, address your concerns, and craft a personalized, strategic roadmap tailored to your vision.
+            We get it—starting something new can feel overwhelming. Book a free
+            session worth ₹5000 to help you gain clarity and confidence. During
+            this one-on-one session, we’ll answer all your questions, address
+            your concerns, and craft a personalized, strategic roadmap tailored
+            to your vision.
           </p>
         </div>
 
         {/* Button */}
         <div className="mt-6">
-          <button className="text-[#173180] bg-[#f8f7f6] font-bold py-2 px-8 md:px-10 rounded-md hover:bg-[#f8f7f6] hover:text-[#173180] transition-all duration-300">
+          <button className="relative text-[#173180] bg-[#f8f7f6] font-bold py-2 px-8 md:px-10 rounded-md hover:text-[#f8f7f6] hover:bg-[#173180] hover:border-[#f8f7f6] hover:border-solid hover:border-2 transition-all duration-300">
+            <span className="absolute bottom-0 left-0 w-full h-0 bg-[#173180] transition-all duration-300"></span>
             Book Your Session
           </button>
         </div>

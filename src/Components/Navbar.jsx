@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,15 +18,26 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Links */}
-      <div className="hidden md:flex justify-center items-center gap-5 mr-5" id="nav-link">
-        <a href="#service" className="nav-link hover:text-[#173180]">SERVICE</a>
-        <a href="#work" className="nav-link hover:text-[#173180]">WORK</a>
-        <a href="#about" className="nav-link hover:text-[#173180]">ABOUT</a>
-        <a href="#contact" className="nav-link hover:text-[#173180]">CONTACT</a>
+      <div
+        className="hidden md:flex justify-center items-center gap-5 mr-5"
+        id="nav-link"
+      >
+        <a href="#service" className="nav-link hover:text-[#173180]">
+          SERVICE
+        </a>
+        <a href="#work" className="nav-link hover:text-[#173180]">
+          WORK
+        </a>
+        <a href="#about" className="nav-link hover:text-[#173180]">
+          ABOUT
+        </a>
+        <a href="#contact" className="nav-link hover:text-[#173180]">
+          CONTACT
+        </a>
       </div>
 
       {/* Hamburger and Close Icon */}
-      <div className="md:hidden flex items-center mr-5">
+      <div className="md:hidden flex items-center mr-5 z-21">
         <button onClick={toggleMenu} className="text-3xl">
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
@@ -35,16 +46,37 @@ const Navbar = () => {
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 bg-[#173180] text-white flex flex-col justify-center items-center text-2xl z-20">
-          <a href="#service" className="mb-5 hover:text-gray-300" onClick={toggleMenu}>
+          <div className="md:hidden flex top-6 right-5 mr-5 absolute">
+            <button onClick={toggleMenu} className="text-3xl">
+              {isMenuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+          </div>
+          <a
+            href="#service"
+            className="mb-5 hover:text-gray-300"
+            onClick={toggleMenu}
+          >
             SERVICE
           </a>
-          <a href="#work" className="mb-5 hover:text-gray-300" onClick={toggleMenu}>
+          <a
+            href="#work"
+            className="mb-5 hover:text-gray-300"
+            onClick={toggleMenu}
+          >
             WORK
           </a>
-          <a href="#about" className="mb-5 hover:text-gray-300" onClick={toggleMenu}>
+          <a
+            href="#about"
+            className="mb-5 hover:text-gray-300"
+            onClick={toggleMenu}
+          >
             ABOUT
           </a>
-          <a href="#contact" className="hover:text-gray-300" onClick={toggleMenu}>
+          <a
+            href="#contact"
+            className="hover:text-gray-300"
+            onClick={toggleMenu}
+          >
             CONTACT
           </a>
         </div>
