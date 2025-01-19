@@ -116,11 +116,11 @@ const Footer = () => {
 
       {/* Copyright Text */}
       <div className="absolute bottom-0 w-full text-center text-xs sm:text-sm md:text-base lg:text-lg text-[#000000] py-2 sm:py-3 md:py-4 overflow-x-hidden">
-  <p>
-    ©2025 Adayam Product All rights reserved. Privacy Policy. Terms of Use. Privacy Policy. Terms of Use
-  </p>
-</div>
-
+        <p>
+          ©2025 Adayam Product All rights reserved. Privacy Policy. Terms of
+          Use. Privacy Policy. Terms of Use
+        </p>
+      </div>
     </footer>
   );
 };
