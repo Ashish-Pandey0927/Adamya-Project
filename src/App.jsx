@@ -41,11 +41,20 @@ const App = () => {
           <div id="work">
             <Section1 />
           </div>
+          <div>
+            <Section7 />
+          </div>
           <div id="service">
             <Section2 />
           </div>
           <div id="projects">
             <Section3 />
+          </div>
+          <div>
+            <Section8 />
+          </div>
+          <div>
+            <Section9 />
           </div>
           <div id="client">
             <Section4 />
@@ -55,15 +64,6 @@ const App = () => {
           </div>
           <div id="contact">
             <Section6 />
-          </div>
-          <div>
-            <Section7 />
-          </div>
-          <div>
-            <Section8 />
-          </div>
-          <div>
-            <Section9 />
           </div>
 
           {/* Footer */}
