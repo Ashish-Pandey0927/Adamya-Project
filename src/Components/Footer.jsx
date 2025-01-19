@@ -115,9 +115,9 @@ const Footer = () => {
       </div>
 
       {/* Copyright Text */}
-      <div className="absolute bottom-0 w-full text-center text-xs text-[#000000] py-2 left-5">
+      <div className="w-full text-center text-xs text-[#000000] py-2">
         <p>
-          ©2025 Adayam Product All rights reserved. Privacy Policy. Terms of Use. Privacy Policy. Terms of Use
+          ©2025 Adayam Product All rights reserved. Privacy Policy. Terms of Use.
         </p>
       </div>
     </footer>
