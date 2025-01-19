@@ -57,11 +57,11 @@ const Section9 = () => {
   return (
     <section className="bg-[#173180] text-white py-10 sm:py-14 md:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Menswear Section */}
           <div
             id="menswear-container"
-            className="relative group w-1/2 text-center overflow-hidden"
+            className="relative group w-full md:w-1/2 text-center overflow-hidden"
           >
             <img
               src="/men and women/1.jpg" // Replace with actual image path
@@ -79,7 +79,7 @@ const Section9 = () => {
           {/* Womenswear Section */}
           <div
             id="womenswear-container"
-            className="relative group w-1/2 text-center overflow-hidden"
+            className="relative group w-full md:w-1/2 text-center overflow-hidden"
           >
             <img
               src="/men and women/2.jpg" // Replace with actual image path
