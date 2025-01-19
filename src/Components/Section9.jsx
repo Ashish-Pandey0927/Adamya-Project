@@ -18,7 +18,7 @@ const Section9 = () => {
         x: "-50%",
         top: "50%",
         left: "50%",
-        color: "#000000",
+        color: "#ffffff",
         ease: "power2.out",
         duration: 0.5,
       });
@@ -31,7 +31,7 @@ const Section9 = () => {
         x: "-50%",
         top: "50%",
         left: "50%",
-        color: "#000000",
+        color: "#ffffff",
         ease: "power2.out",
         duration: 0.5,
       });
