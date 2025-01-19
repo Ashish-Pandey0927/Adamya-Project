@@ -63,7 +63,7 @@ const LoadingAnimation = () => {
       <div className="flex flex-col items-center">
         <img
           ref={wolfRef}
-          src="/wolf.png"
+          src="/wolf2.png"
           alt="Wolf Animation"
           className="w-[10rem] md:w-[15rem]"
         />
