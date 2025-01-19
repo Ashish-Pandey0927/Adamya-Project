@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useState, useEffect } from 'react';
 import Navbar from './Components/Navbar'; // Adjust the path if needed
 import Hero from './Components/Hero';
 import Section1 from './Components/Section1';
@@ -10,68 +8,68 @@ import Section4 from './Components/Section4';
 import Section5 from './Components/Section5';
 import Section6 from './Components/Section6';
 import Footer from './Components/Footer';
+import Section7 from './Components/Section7';
+import Section8 from './Components/Section8';
+import Section9 from './Components/Section9';
+import LoadingAnimation from './LoadingAnimation'; // Import the LoadingAnimation component
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    // Simulate loading animation duration
+    const timer = setTimeout(() => {
+      setIsLoading(false); // Hide loading animation after it ends
+    }, 5000); // Set to the duration of your loading animation
 
-    // Select all sections, hero, and footer (exclude navbar)
-    const elements = document.querySelectorAll(
-      '.animate-on-scroll'
-    );
-
-    elements.forEach((element) => {
-      gsap.fromTo(
-        element,
-        { y: 50, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: element,
-            start: 'top 80%', // Start animation when the element enters the viewport
-            end: 'top 30%',
-            scrub: true, // Synchronize animation with scroll
-          },
-        }
-      );
-    });
+    return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
 
   return (
     <div>
-      {/* Navbar is excluded from animation */}
-      <Navbar />
+      {isLoading ? (
+        <LoadingAnimation />
+      ) : (
+        <>
+          {/* Navbar */}
+          <Navbar />
 
-      {/* Sections with animation */}
-      <div className="animate-on-scroll">
-        <Hero />
-      </div>
-      <div className="animate-on-scroll">
-        <Section1 />
-      </div>
-      <div className="animate-on-scroll">
-        <Section2 />
-      </div>
-      <div className="animate-on-scroll">
-        <Section3 />
-      </div>
-      <div className="animate-on-scroll">
-        <Section4 />
-      </div>
-      <div className="animate-on-scroll">
-        <Section5 />
-      </div>
-      <div className="animate-on-scroll">
-        <Section6 />
-      </div>
+          {/* Sections with proper IDs */}
+          <div id="home">
+            <Hero />
+          </div>
+          <div id="work">
+            <Section1 />
+          </div>
+          <div id="service">
+            <Section2 />
+          </div>
+          <div id="projects">
+            <Section3 />
+          </div>
+          <div id="client">
+            <Section4 />
+          </div>
+          <div id="about">
+            <Section5 />
+          </div>
+          <div id="contact">
+            <Section6 />
+          </div>
+          <div>
+            <Section7 />
+          </div>
+          <div>
+            <Section8 />
+          </div>
+          <div>
+            <Section9 />
+          </div>
 
-      {/* Footer with animation */}
-      
-        <Footer />
-      
+          {/* Footer */}
+          <Footer />
+        </>
+      )}
     </div>
   );
 };

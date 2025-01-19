@@ -34,7 +34,7 @@ const Hero = () => {
         {/* Button */}
         <div className="mt-6">
           <button className="bg-[#173180] text-white font-bold py-2 px-6 md:px-10 rounded-md hover:bg-sky-300 hover:text-[#173180] transition-all duration-300">
-            LEARN MORE
+            <a href="#contact">LEARN MORE</a>
           </button>
         </div>
       </div>
@@ -44,7 +44,7 @@ const Hero = () => {
         <img
           ref={imageRef}
           src="/home-img.png"
-          className="w-[12rem] md:w-[18rem]"
+          className="w-[10rem] sm:w-[12rem] md:w-[18rem]" // Adjusted sizes for different screen sizes
           alt="Rotating Fashion Vision"
         />
       </div>

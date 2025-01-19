@@ -26,7 +26,7 @@ const Section6 = () => {
         <div className="mt-6">
           <button className="relative text-[#173180] bg-[#f8f7f6] font-bold py-2 px-8 md:px-10 rounded-md hover:text-[#f8f7f6] hover:bg-[#173180] hover:border-[#f8f7f6] hover:border-solid hover:border-2 transition-all duration-300">
             <span className="absolute bottom-0 left-0 w-full h-0 bg-[#173180] transition-all duration-300"></span>
-            Book Your Session
+             <a href="https://calendly.com/" target="_blank">Book Your Session</a>
           </button>
         </div>
       </div>

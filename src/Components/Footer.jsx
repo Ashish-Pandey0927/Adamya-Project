@@ -1,6 +1,7 @@
 import React from "react";
 import { GrMailOption, GrLinkedin, GrInstagram } from "react-icons/gr";
 import { PiPhoneCallFill } from "react-icons/pi";
+import { Link } from "react-scroll"; // Import react-scroll
 
 const Footer = () => {
   return (
@@ -22,44 +23,91 @@ const Footer = () => {
       <div className="font-semibold text-center md:text-left">
         <ul className="gap-2 flex flex-col">
           <li>
-            <a href="#home" className="hover:text-[#173180]">Home</a>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-[#173180]"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#about" className="hover:text-[#173180]">About Us</a>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-[#173180]"
+            >
+              About Us
+            </Link>
           </li>
           <li>
-            <a href="#services" className="hover:text-[#173180]">Services</a>
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-[#173180]"
+            >
+              Services
+            </Link>
           </li>
           <li>
-            <a href="#clients" className="hover:text-[#173180]">Clients</a>
+            <Link
+              to="clients"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-[#173180]"
+            >
+              Clients
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="hover:text-[#173180]">Contact Us</a>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-[#173180]"
+            >
+              Contact Us
+            </Link>
           </li>
         </ul>
       </div>
 
       {/* Icons Section */}
       <div className="flex flex-col md:flex-col items-center md:items-start text-xl gap-4 sm:gap-6">
-        {/* Small screen: Flex row */}
         <ul className="flex flex-row md:flex-col gap-4">
           <li>
-            <a href="mailto:example@example.com" className="hover:text-[#173180]">
+            <a
+              href="mailto:dhiraj@adamyaprojects.com"
+              className="hover:text-[#173180]"
+            >
               <GrMailOption />
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#173180]">
+            <a
+              href="https://www.linkedin.com/company/adamya-projects/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#173180]"
+            >
               <GrLinkedin />
             </a>
           </li>
           <li>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#173180]">
+            <a
+              href="https://www.instagram.com/adamyaprojects?igsh=a2Z3ZDRiZHF3bTlz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#173180]"
+            >
               <GrInstagram />
             </a>
           </li>
           <li>
-            <a href="tel:+1234567890" className="hover:text-[#173180]">
+            <a href="tel:+91 82967 88207" className="hover:text-[#173180]">
               <PiPhoneCallFill />
             </a>
           </li>

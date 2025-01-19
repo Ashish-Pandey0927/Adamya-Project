@@ -9,12 +9,41 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-5 h-20 z-10 w-full bg-transparent absolute">
-      {/* Logo Section */}
-      <div className="flex items-center ml-5">
+    <nav className="flex justify-between items-center p-5 h-22 z-10 w-full bg-transparent absolute">
+      {/* Left Section: Logo */}
+      <div className="flex items-center">
         <a href="#home">
-          <img src="/logo.png" alt="logo" className="h-16 sm:h-20" />
+          {/* Mobile logo (visible only on mobile) */}
+          <img
+            src="/logo.png"
+            alt="logo"
+            className="h-16 sm:h-10 md:hidden"
+          />
+          {/* Desktop logo (visible only on larger screens) */}
+          <img
+            src="/Types.png"
+            alt="logo"
+            className="h-16 sm:h-10 lg:h-16 hidden md:block"
+          />
         </a>
+      </div>
+
+      {/* Center Section: Wolf Icon (Desktop only) */}
+      <div className="hidden md:flex justify-center">
+        <a href="#home">
+          <img
+            src="/public/wolf.png"
+            alt="wolf icon"
+            className="h-16 sm:h-15"
+          />
+        </a>
+      </div>
+
+      {/* Right Section: Hamburger Menu */}
+      <div className="md:hidden flex items-center">
+        <button onClick={toggleMenu} className="text-3xl">
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
 
       {/* Desktop Links */}
@@ -36,47 +65,24 @@ const Navbar = () => {
         </a>
       </div>
 
-      {/* Hamburger and Close Icon */}
-      <div className="md:hidden flex items-center mr-5 z-21">
-        <button onClick={toggleMenu} className="text-3xl">
-          {isMenuOpen ? <FaTimes /> : <FaBars />}
-        </button>
-      </div>
-
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 bg-[#173180] text-white flex flex-col justify-center items-center text-2xl z-20">
-          <div className="md:hidden flex top-6 right-5 mr-5 absolute">
+          <div className="absolute top-6 right-5">
             <button onClick={toggleMenu} className="text-3xl">
               {isMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-          <a
-            href="#service"
-            className="mb-5 hover:text-gray-300"
-            onClick={toggleMenu}
-          >
+          <a href="#service" className="mb-5 hover:text-gray-300" onClick={toggleMenu}>
             SERVICE
           </a>
-          <a
-            href="#work"
-            className="mb-5 hover:text-gray-300"
-            onClick={toggleMenu}
-          >
+          <a href="#work" className="mb-5 hover:text-gray-300" onClick={toggleMenu}>
             WORK
           </a>
-          <a
-            href="#about"
-            className="mb-5 hover:text-gray-300"
-            onClick={toggleMenu}
-          >
+          <a href="#about" className="mb-5 hover:text-gray-300" onClick={toggleMenu}>
             ABOUT
           </a>
-          <a
-            href="#contact"
-            className="hover:text-gray-300"
-            onClick={toggleMenu}
-          >
+          <a href="#contact" className="hover:text-gray-300" onClick={toggleMenu}>
             CONTACT
           </a>
         </div>
