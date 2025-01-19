@@ -44,7 +44,7 @@ const App = () => {
           <div>
             <Section7 />
           </div>
-          <div id="service">
+          <div id="services">
             <Section2 />
           </div>
           <div id="projects">
@@ -56,7 +56,7 @@ const App = () => {
           <div>
             <Section9 />
           </div>
-          <div id="client">
+          <div id="clients">
             <Section4 />
           </div>
           <div id="about">
