@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="hidden md:flex justify-center">
         <a href="#home">
           <img
-            src="/public/wolf.png"
+            src="/wolf.png"
             alt="wolf icon"
             className="h-16 sm:h-15"
           />
