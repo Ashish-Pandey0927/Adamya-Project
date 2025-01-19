@@ -5,7 +5,7 @@ import { Link } from "react-scroll"; // Import react-scroll
 
 const Footer = () => {
   return (
-    <footer className="h-auto px-4 sm:px-6 md:px-10 lg:px-[150px] flex flex-col md:flex-row justify-between text-[#000000] bg-[#f8f7f6] py-10 sm:py-10 md:py-7 gap-6">
+    <footer className="relative h-auto px-4 sm:px-6 md:px-10 lg:px-[150px] flex flex-col md:flex-row justify-between text-[#000000] bg-[#f8f7f6] py-10 sm:py-10 md:py-7 gap-6">
       {/* Logo Section */}
       <div className="flex justify-center md:justify-start">
         <img src="/logo.png" alt="logo" className="h-[150px] sm:h-[200px]" />
@@ -112,6 +112,13 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      {/* Copyright Text */}
+      <div className="absolute bottom-0 w-full text-center text-xs text-[#000000] py-2 left-5">
+        <p>
+          ©2025 Adayam Product All rights reserved. Privacy Policy. Terms of Use. Privacy Policy. Terms of Use
+        </p>
       </div>
     </footer>
   );
