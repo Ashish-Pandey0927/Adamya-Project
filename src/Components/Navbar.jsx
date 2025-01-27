@@ -51,7 +51,7 @@ const Navbar = () => {
         className="hidden md:flex justify-center items-center gap-5 mr-5"
         id="nav-link"
       >
-        <a href="#service" className="nav-link hover:text-[#173180]">
+        <a href="#services" className="nav-link hover:text-[#173180]">
           SERVICE
         </a>
         <a href="#work" className="nav-link hover:text-[#173180]">
