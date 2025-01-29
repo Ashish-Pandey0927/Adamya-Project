@@ -26,39 +26,39 @@ const Section1 = () => {
     // );
 
     // Animate each child element (Heading, Description, and Images)
-    gsap.fromTo(
-      '.heading', // target the heading
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '.heading',
-          start: 'top 80%',
-          end: 'top 30%',
-          scrub: true,
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   '.heading', // target the heading
+    //   { opacity: 0, y: 50 },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     duration: 1.2,
+    //     ease: 'power3.out',
+    //     scrollTrigger: {
+    //       trigger: '.heading',
+    //       start: 'top 80%',
+    //       end: 'top 30%',
+    //       scrub: true,
+    //     },
+    //   }
+    // );
 
-    gsap.fromTo(
-      '.description', // target the description
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '.description',
-          start: 'top 80%',
-          end: 'top 30%',
-          scrub: true,
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   '.description', // target the description
+    //   { opacity: 0, y: 50 },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     duration: 1.2,
+    //     ease: 'power3.out',
+    //     scrollTrigger: {
+    //       trigger: '.description',
+    //       start: 'top 80%',
+    //       end: 'top 30%',
+    //       scrub: true,
+    //     },
+    //   }
+    // );
 
     gsap.fromTo(
       '.image-container', // target each image container

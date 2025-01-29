@@ -13,14 +13,14 @@ const Section8 = () => {
           {/* Table Header */}
           <thead>
             <tr className="bg-[#0D3A87]">
-              <th className="border border-white text-left p-3 font-semibold"> </th>
-              <th className="border border-white text-center p-3 font-semibold">
+              <th className="border border-white text-left p-5 text-lg font-semibold"> </th>
+              <th className="border border-white text-center p-5 text-lg font-semibold">
                 ADAMYA PROJECTS
               </th>
-              <th className="border border-white text-center p-3 font-semibold">
+              <th className="border border-white text-center p-5 text-lg font-semibold">
                 TRADITIONAL CLOTHING MANUFACTURERS
               </th>
-              <th className="border border-white text-center p-3 font-semibold">
+              <th className="border border-white text-center p-5 text-lg font-semibold">
                 PRINT-ON-DEMAND COMPANIES
               </th>
             </tr>
@@ -29,68 +29,116 @@ const Section8 = () => {
           {/* Table Body */}
           <tbody>
             <tr>
-              <td className="border border-white p-3 text-center align-middle">
+              <td className="border border-white p-5 text-center text-base align-middle">
                 Cost-Efficient for Both Large & Small Orders
               </td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
             </tr>
             <tr>
-              <td className="border border-white p-3 text-center align-middle">
+              <td className="border border-white p-5 text-center text-base align-middle">
                 Flexible Minimum Order Quantities (MOQ)
               </td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
             </tr>
             <tr>
-              <td className="border border-white p-3 text-center align-middle">
+              <td className="border border-white p-5 text-center text-base align-middle">
                 End-to-End Design & Delivery Solutions
               </td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
             </tr>
             <tr>
-              <td className="border border-white p-3 text-center align-middle">
+              <td className="border border-white p-5 text-center text-base align-middle">
                 Seasonal & Custom Collections
               </td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
             </tr>
             <tr>
-              <td className="border border-white p-3 text-center align-middle">
+              <td className="border border-white p-5 text-center text-base align-middle">
                 Comprehensive Product Development
               </td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
             </tr>
             <tr>
-              <td className="border border-white p-3 text-center align-middle">
+              <td className="border border-white p-5 text-center text-base align-middle">
                 Custom Branding & Packaging
               </td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
             </tr>
             <tr>
-              <td className="border border-white p-3 text-center align-middle">
+              <td className="border border-white p-5 text-center text-base align-middle">
                 Exclusive, 100% Customizable Products
               </td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
             </tr>
             <tr>
-              <td className="border border-white p-3 text-center align-middle">
+              <td className="border border-white p-5 text-center text-base align-middle">
                 Trend Analysis & Concept Ideation
               </td>
-              <td className="border border-white text-green-500 text-center align-middle">✔</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
-              <td className="border border-white text-red-500 text-center align-middle">✖</td>
+              <td className="border border-white text-green-500 text-center text-base align-middle">
+                <span className="text-3xl">✔</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
+              <td className="border border-white text-red-500 text-center text-base align-middle">
+                <span className="text-3xl">✖</span>
+              </td>
             </tr>
           </tbody>
         </table>
