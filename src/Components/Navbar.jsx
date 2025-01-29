@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-5 h-22 z-10 w-full bg-transparent absolute">
+    <nav className="flex justify-between items-center p-2 h-22 z-10 w-full bg-transparent absolute">
       {/* Left Section: Logo */}
       <div className="flex items-center">
         <a href="#home">
@@ -17,7 +17,7 @@ const Navbar = () => {
           <img
             src="/logo.png"
             alt="logo"
-            className="h-24 sm:h-20 md:hidden mx-auto relative left-2/3" // Centered and bigger for mobile
+            className="h-16 sm:h-10 md:hidden ml-24 relative " // Centered and bigger for mobile
           />
           {/* Desktop logo (visible only on larger screens) */}
           <img
