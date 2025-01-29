@@ -17,7 +17,7 @@ const Navbar = () => {
           <img
             src="/logo.png"
             alt="logo"
-            className="h-16 sm:h-10 md:hidden"
+            className="h-24 sm:h-20 md:hidden mx-auto relative left-2/3" // Centered and bigger for mobile
           />
           {/* Desktop logo (visible only on larger screens) */}
           <img
