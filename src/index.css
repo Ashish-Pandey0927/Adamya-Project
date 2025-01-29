@@ -4,6 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../futura/futur.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   margin: 0;
   padding: 0;
@@ -13,16 +20,23 @@
 html {
   scroll-behavior: smooth;
 }
+/* @font-face {
+  font-family: 'futur';
+  src: url('/futura/futur.ttf');
+} */
 
 body{
   overflow-x: hidden;
+  font-family: 'Futura', sans-serif;
 }
-#nav-link{
-  font-family: "Unbounded", serif;
+
+
+/* #nav-link{
+  font-family: futur;
 }
 .first-text{
   font-family: "Unbounded", serif;
-}
+} */
 
 .nav-link:hover {
   color: #173180;

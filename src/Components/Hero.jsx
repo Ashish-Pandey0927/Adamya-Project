@@ -1,19 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import React, { useRef } from 'react';
 
 const Hero = () => {
   const imageRef = useRef(null);
-
-  useEffect(() => {
-    if (imageRef.current) {
-      gsap.to(imageRef.current, {
-        rotation: 360,
-        duration: 10,
-        repeat: -1, // Infinite loop
-        ease: "linear", // Smooth rotation
-      });
-    }
-  }, []);
 
   return (
     <div className="h-auto md:h-[100vh] w-full flex flex-col-reverse md:flex-row justify-around items-center px-6 md:px-10 lg:px-[150px] py-10">
@@ -22,11 +10,11 @@ const Hero = () => {
         <div className="text-[1.5rem] md:text-[2rem] first-text">
           Launch Your Brand Now!
         </div>
-        <div className="first-text text-[3rem] md:text-[4rem] lg:text-[5rem] font-bold leading-tight mt-4">
+        <div className="first-text text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold leading-none mt-4">
           YOUR DREAM. <br />
           WE Deliver.
         </div>
-        <div className="first-text text-lg md:text-2xl tracking-wide font-light mt-4">
+        <div className="first-text text-lg md:text-3xl tracking-wide font-light mt-4">
           From concept to creation, <br />
           we bring your fashion vision to life.
         </div>
@@ -40,12 +28,12 @@ const Hero = () => {
       </div>
 
       {/* Image Section */}
-      <div className="flex justify-center items-center w-full md:w-1/3 mb-10 md:mb-0">
+      <div className="flex justify-center items-center w-full md:w-1/3 mb-6 md:mb-0 mt-6 md:mt-0">
         <img
           ref={imageRef}
           src="/home-img.png"
           className="w-[10rem] sm:w-[12rem] md:w-[18rem]" // Adjusted sizes for different screen sizes
-          alt="Rotating Fashion Vision"
+          alt="Fashion Vision"
         />
       </div>
     </div>

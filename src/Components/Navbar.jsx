@@ -23,7 +23,7 @@ const Navbar = () => {
           <img
             src="/Types.png"
             alt="logo"
-            className="h-16 sm:h-10 lg:h-16 hidden md:block"
+            className="h-16 sm:h-10 lg:h-15 hidden md:block"
           />
         </a>
       </div>

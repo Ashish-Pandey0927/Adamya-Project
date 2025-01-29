@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
 
       {/* Icons Section */}
-      <div className="flex flex-col md:flex-col items-center md:items-start text-xl gap-4 sm:gap-6">
+      <div className="flex flex-col md:flex-col items-center md:items-start text-xl gap-4 sm:gap-6 pb-10">
         <ul className="flex flex-row md:flex-col gap-4">
           <li>
             <a
@@ -115,11 +115,8 @@ const Footer = () => {
       </div>
 
       {/* Copyright Text */}
-      <div className="absolute bottom-0 w-full text-center text-xs sm:text-sm md:text-base lg:text-lg text-[#000000] py-2 sm:py-3 md:py-4 break-words">
-        <p>
-          ©2025 Adamya Product. All rights reserved. Privacy Policy. Terms of
-          Use. Privacy Policy. Terms of Use.
-        </p>
+      <div className="absolute bottom-0 left-0 w-full text-center text-xs sm:text-sm text-[#000000] py-3 bg-[#f8f7f6]">
+        <p>©2025 Adamya Projects. All rights reserved. Privacy Policy. Terms of Use.</p>
       </div>
     </footer>
   );
