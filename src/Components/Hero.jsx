@@ -7,14 +7,14 @@ const Hero = () => {
     <div className="h-auto md:h-[100vh] w-full flex flex-col-reverse md:flex-row justify-around items-center px-6 md:px-10 lg:px-[150px] py-10">
       {/* Text Section */}
       <div className="flex flex-col w-full md:w-2/3 text-center md:text-left">
-        <div className="text-[1.5rem] md:text-[2rem] first-text">
+        <div className="text-[1.5rem] md:text-[2rem] first-text uppercase">
           Launch Your Brand Now!
         </div>
-        <div className="first-text text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold leading-none mt-4">
+        <div className="first-text text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold leading-none mt-4 uppercase">
           YOUR DREAM. <br />
           WE Deliver.
         </div>
-        <div className="first-text text-lg md:text-3xl tracking-wide font-light mt-4">
+        <div className="first-text text-lg md:text-2xl tracking-wide font-light mt-4 uppercase">
           From concept to creation, <br />
           we bring your fashion vision to life.
         </div>
