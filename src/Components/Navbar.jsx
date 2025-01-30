@@ -74,7 +74,7 @@ const Navbar = () => {
               {isMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-          <a href="#service" className="mb-5 hover:text-gray-300" onClick={toggleMenu}>
+          <a href="#services" className="mb-5 hover:text-gray-300" onClick={toggleMenu}>
             SERVICE
           </a>
           <a href="#work" className="mb-5 hover:text-gray-300" onClick={toggleMenu}>
