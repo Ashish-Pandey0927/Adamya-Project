@@ -59,10 +59,15 @@ const Section7 = () => {
       </div>
 
       {/* Delivery Section */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
-        <img src="/Untitled design/7.png" alt="Delivery" className="w-[100px] sm:w-[130px] h-auto" />
-        <h3 className="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] font-bold uppercase text-center md:text-left">
-          Delivery
+       {/* Delivery Section - Modified for mobile alignment */}
+       <div className="flex flex-row justify-start md:justify-center  items-center gap-5 mt-10">
+        <img 
+          src="/Untitled design/7.png" 
+          alt="Delivery" 
+          className="w-[80px] sm:w-[130px] h-auto" // Adjusted mobile image size
+        />
+        <h3 className="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] font-bold uppercase text-left md:text-left">
+           On Time Delivery
         </h3>
       </div>
     </section>

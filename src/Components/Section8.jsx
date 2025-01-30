@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Section8 = () => {
   return (
@@ -9,18 +9,25 @@ const Section8 = () => {
         </h1>
       </div>
       <div className="overflow-x-auto">
-        <table className="w-full border-collapse border border-white">
+        <table className="w-full border-collapse border border-white table-fixed">
           {/* Table Header */}
           <thead>
             <tr className="bg-[#0D3A87]">
-              <th className="border border-white text-left p-5 text-lg font-semibold"> </th>
-              <th className="border border-white text-center p-5 text-lg font-semibold">
-                ADAMYA PROJECTS
+              <th className="border border-white text-left p-5 text-lg font-semibold w-1/4">
+                {" "}
               </th>
-              <th className="border border-white text-center p-5 text-lg font-semibold">
+              <th className="border border-white text-center p-5 text-lg font-semibold w-1/4">
+                {/* Responsive logo image */}
+                <img
+                  src="/logo.png"
+                  alt="logo"
+                  className="h-20 sm:h-24 md:h-28 lg:h-32 mx-auto" // Increased logo size
+                />
+              </th>
+              <th className="border border-white text-center p-5 text-lg font-semibold w-1/4">
                 TRADITIONAL CLOTHING MANUFACTURERS
               </th>
-              <th className="border border-white text-center p-5 text-lg font-semibold">
+              <th className="border border-white text-center p-5 text-lg font-semibold w-1/4">
                 PRINT-ON-DEMAND COMPANIES
               </th>
             </tr>
@@ -33,13 +40,13 @@ const Section8 = () => {
                 Cost-Efficient for Both Large & Small Orders
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
             </tr>
             <tr>
@@ -47,13 +54,13 @@ const Section8 = () => {
                 Flexible Minimum Order Quantities (MOQ)
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
             </tr>
             <tr>
@@ -61,13 +68,13 @@ const Section8 = () => {
                 End-to-End Design & Delivery Solutions
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
             </tr>
             <tr>
@@ -75,13 +82,13 @@ const Section8 = () => {
                 Seasonal & Custom Collections
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
             </tr>
             <tr>
@@ -89,13 +96,13 @@ const Section8 = () => {
                 Comprehensive Product Development
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
             </tr>
             <tr>
@@ -103,13 +110,13 @@ const Section8 = () => {
                 Custom Branding & Packaging
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
             </tr>
             <tr>
@@ -117,13 +124,13 @@ const Section8 = () => {
                 Exclusive, 100% Customizable Products
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
             </tr>
             <tr>
@@ -131,13 +138,13 @@ const Section8 = () => {
                 Trend Analysis & Concept Ideation
               </td>
               <td className="border border-white text-green-500 text-center text-base align-middle">
-                <span className="text-3xl">✔</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✔</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
               <td className="border border-white text-red-500 text-center text-base align-middle">
-                <span className="text-3xl">✖</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">✖</span>
               </td>
             </tr>
           </tbody>

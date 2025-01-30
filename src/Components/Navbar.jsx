@@ -11,15 +11,15 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center p-2 h-22 z-10 w-full bg-transparent absolute">
       {/* Left Section: Logo */}
-      <div className="flex items-center">
+      <div className="flex items-center justify-center md:justify-start w-full md:w-auto">
         <a href="#home">
-          {/* Mobile logo (visible only on mobile) */}
+          {/* Mobile logo */}
           <img
             src="/logo.png"
             alt="logo"
-            className="h-16 sm:h-10 md:hidden ml-24 relative " // Centered and bigger for mobile
+            className="h-24 sm:h-17 md:hidden mx-auto"
           />
-          {/* Desktop logo (visible only on larger screens) */}
+          {/* Desktop logo */}
           <img
             src="/Types.png"
             alt="logo"
@@ -66,6 +66,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Dropdown Menu */}
+      
       {isMenuOpen && (
         <div className="fixed inset-0 bg-[#173180] text-white flex flex-col justify-center items-center text-2xl z-20">
           <div className="absolute top-6 right-5">

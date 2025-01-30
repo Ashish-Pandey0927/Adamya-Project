@@ -82,30 +82,30 @@ const Section2 = () => {
         {/* Services Lists */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 text-base md:text-lg lg:text-xl font-bold mt-10">
           {/* Left Services List */}
-          <div className="flex flex-col items-center md:items-center lg:items-start service-list">
-            <ul className="gap-3 flex flex-col text-center md:text-center lg:text-left">
-              <li>Brand Strategy</li>
-              <li>Brand Architecture</li>
-              <li>Purpose & Positioning</li>
-              <li>Identity Design</li>
-              <li>Creative Strategy</li>
-              <li>Brand Communication</li>
-              <li>Brand Book Creation</li>
-              <li>Brand Consultancy</li>
+          <div className="flex flex-col items-start service-list">
+            <ul className="gap-3 flex flex-col text-left list-disc list-inside">
+              <li className="service-item">Brand Strategy</li>
+              <li className="service-item">Brand Architecture</li>
+              <li className="service-item">Purpose & Positioning</li>
+              <li className="service-item">Identity Design</li>
+              <li className="service-item">Creative Strategy</li>
+              <li className="service-item">Brand Communication</li>
+              <li className="service-item">Brand Book Creation</li>
+              <li className="service-item">Brand Consultancy</li>
             </ul>
           </div>
 
           {/* Right Services List */}
-          <div className="flex flex-col items-center md:items-center lg:items-start service-list">
-            <ul className="gap-3 flex flex-col text-center md:text-center lg:text-left">
-              <li>Forecast Driven Designs</li>
-              <li>Quick Turnaround & Easy Sampling</li>
-              <li>Customised Designs & Tech Packs</li>
-              <li>End-to-End Production &</li>
-              <li>Merchandising Support</li>
-              <li>Social Media Management</li>
-              <li>Stunning Photoshoots</li>
-              <li>Dedicated Customer Success Manager</li>
+          <div className="flex flex-col items-start service-list">
+            <ul className="gap-3 flex flex-col text-left list-disc list-inside">
+              <li className="service-item">Forecast Driven Designs</li>
+              <li className="service-item">Quick Turnaround & Easy Sampling</li>
+              <li className="service-item">Customised Designs & Tech Packs</li>
+              <li className="service-item">End-to-End Production &</li>
+              <li className="service-item">Merchandising Support</li>
+              <li className="service-item">Social Media Management</li>
+              <li className="service-item">Stunning Photoshoots</li>
+              <li className="service-item">Dedicated Customer Success Manager</li>
             </ul>
           </div>
         </div>
