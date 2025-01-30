@@ -3,64 +3,64 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Section2 = () => {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
 
     // Animate the heading
-    gsap.fromTo(
-      '.heading',
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '.heading',
-          start: 'top 80%',
-          end: 'top 30%',
-          scrub: true,
-        },
-      }
-    );
+  //   gsap.fromTo(
+  //     '.heading',
+  //     { opacity: 0, y: 50 },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 1.2,
+  //       ease: 'power3.out',
+  //       scrollTrigger: {
+  //         trigger: '.heading',
+  //         start: 'top 80%',
+  //         end: 'top 30%',
+  //         scrub: true,
+  //       },
+  //     }
+  //   );
 
-    // Animate the description
-    gsap.fromTo(
-      '.description',
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '.description',
-          start: 'top 80%',
-          end: 'top 30%',
-          scrub: true,
-        },
-      }
-    );
+  //   // Animate the description
+  //   gsap.fromTo(
+  //     '.description',
+  //     { opacity: 0, y: 50 },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 1.2,
+  //       ease: 'power3.out',
+  //       scrollTrigger: {
+  //         trigger: '.description',
+  //         start: 'top 80%',
+  //         end: 'top 30%',
+  //         scrub: true,
+  //       },
+  //     }
+  //   );
 
-    // Animate the service lists
-    gsap.fromTo(
-      '.service-list',
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        ease: 'power3.out',
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: '.service-list',
-          start: 'top 80%',
-          end: 'top 30%',
-          scrub: true,
-        },
-      }
-    );
-  }, []);
+  //   // Animate the service lists
+  //   gsap.fromTo(
+  //     '.service-list',
+  //     { opacity: 0, y: 50 },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 1.2,
+  //       ease: 'power3.out',
+  //       stagger: 0.3,
+  //       scrollTrigger: {
+  //         trigger: '.service-list',
+  //         start: 'top 80%',
+  //         end: 'top 30%',
+  //         scrub: true,
+  //       },
+  //     }
+  //   );
+  // }, []);
 
   return (
     <section className="h-auto px-6 md:px-10 lg:px-[150px] flex flex-col bg-[#173180] text-[#f8f7f6] py-6 md:py-10 section2">

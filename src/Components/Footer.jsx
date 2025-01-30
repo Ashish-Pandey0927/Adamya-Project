@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="relative h-auto px-4 sm:px-6 md:px-10 lg:px-[150px] flex flex-col md:flex-row justify-between text-[#000000] bg-[#f8f7f6] py-10 sm:py-10 md:py-7 gap-6 overflow-x-hidden">
       {/* Logo Section */}
       <div className="flex justify-center md:justify-start">
-        <img src="/logo.png" alt="logo" className="h-[150px] sm:h-[200px]" />
+        <img src="/logo.png" alt="logo" className="h-[150px] sm:h-[100px]" />
       </div>
 
       {/* Headline Section */}
