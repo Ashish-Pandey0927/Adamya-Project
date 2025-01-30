@@ -8,8 +8,9 @@ const Section8 = () => {
           HOW ARE WE DIFFERENT FROM OTHERS?
         </h1>
       </div>
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse border border-white table-fixed">
+
+      <div className="overflow-x-auto md:overflow-visible">
+        <table className="w-full border-collapse border border-white table-fixed min-w-[800px] md:min-w-full">
           {/* Table Header */}
           <thead>
             <tr className="bg-[#0D3A87]">
@@ -17,11 +18,10 @@ const Section8 = () => {
                 {" "}
               </th>
               <th className="border border-white text-center p-5 text-lg font-semibold w-1/4">
-                {/* Responsive logo image */}
                 <img
-                  src="/logo.png"
+                  src="/whitewolf.png"
                   alt="logo"
-                  className="h-20 sm:h-24 md:h-28 lg:h-32 mx-auto" // Increased logo size
+                  className="h-20 sm:h-24 md:h-28 lg:h-32 mx-auto"
                 />
               </th>
               <th className="border border-white text-center p-5 text-lg font-semibold w-1/4">

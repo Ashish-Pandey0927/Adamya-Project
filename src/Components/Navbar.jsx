@@ -17,7 +17,7 @@ const Navbar = () => {
           <img
             src="/logo.png"
             alt="logo"
-            className="h-24 sm:h-17 md:hidden mx-auto"
+            className="h-11 sm:h-17 md:hidden mx-auto"
           />
           {/* Desktop logo */}
           <img
